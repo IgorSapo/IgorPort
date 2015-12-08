@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
-    <head>
-    <meta charset="UTF-8">
-	<!-- 2Просим IE не переключаться в последний режим -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Igorport</title>
-	<!-- Корректное масштабирование на разных устройствах -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- SEO -->
-	<meta name="descriprion" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="">
-	<!-- Bower CSS -->
+    <head>        
+        <title>Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- SEO -->
+        <meta name="descriprion" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        
+          
+        <!--[if lt IE 9]>
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  	    <![endif]-->
+        
+        	<!-- Bower CSS -->
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">    
     <!-- CSS -->
 	<link rel="stylesheet" href="css/main.css">
@@ -19,9 +26,258 @@
     <!-- JS -->
 	<script src="bower/modernizer/modernizr.js"></script>
     </head>
+    
     <body>
-        <p>Проверка локального сервера1</p>
-        <script src="bower/jquery/dist/jquery.js"></script>
-        <script src="js/main.js"></script>
+        <div class="wrapper">
+            
+            <!-- Header -->
+            <header class="header">
+                <div class="header-content clearfix">
+                    
+                    <!-- Logo -->
+                    <a class="header-logo" href=""><img src="img/logo2.png" alt="LoftSchool"></a>
+                    
+                    <!-- Social buttons -->
+                    <ul class="header-social">
+                        <li class="header-social-facebook">
+                            <a class="facebook-link sprite sprite-social-circle-background" href="">
+                                <div class="sprite facebook-icon"></div>
+                            </a>
+                        </li>
+                        <li class="header-social-vk">
+                            <a class="vk-link sprite sprite-social-circle-background" href="">
+                                <div class="sprite vk-icon"></div>
+                            </a>
+                        </li>
+                        <li class="header-social-twitter">
+                            <a class="twitter-link sprite sprite-social-circle-background" href="">
+                                <div class="sprite twitter-icon"></div>
+                            </a>
+                        </li>
+                        <li class="header-social-github">
+                            <a class="github-link sprite sprite-social-circle-background" href="">
+                                <div class="sprite github-icon"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>     
+            </header>
+            
+            <!-- Main -->
+            <div class="main clearfix">
+                
+                    <!-- Navigation -->
+                    <div class="aside">
+                        
+                        <ul class="main-nav">
+                            <li class="main-nav-item-active"><a href="./index.html">Обо мне</a></li>
+                            <li class="main-nav-item"><a href="./portfolio.html">Мои работы</a></li>
+                            <li class="main-nav-item"><a href="./feedback.html">Обратная связь</a></li>
+                        </ul>
+                        
+                        <div class="contacts">
+                            <div class="contacts-header">Контакты</div>
+                            <ul class="contacts-list">
+                                <li class="contacts-item">
+                                    <a href="mailto:amsterdam1611@gmail.com">
+                                        <div class="contacts-icon-container">
+                                            <div class="sprite email-icon"></div>
+                                        </div>
+                                        amsterdam1611@gmail.com
+                                    </a>
+                                </li>
+                                <li class="contacts-item">
+                                    <a href="tel:+79047460749">
+                                        <div class="contacts-icon-container">
+                                            <div class="sprite phone-icon"></div>
+                                        </div>
+                                        +79047460749
+                                    </a>
+                                </li>
+                                <li class="contacts-item">
+                                    <a href="skype:igor.sapoghnikoff">
+                                        <div class="contacts-icon-container">
+                                            <div class="sprite skype-icon"></div>
+                                        </div>
+                                        igor.sapoghnikoff
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                
+                    <!-- Main content -->
+                    <div class="main-content">
+                        
+                    <!-- Section -->
+                        <div class="main-content-section">
+                            
+                            <!-- Section header -->
+                            <h3 class="content-section-header">Основная информация</h3>                                         
+                            
+                            <!-- Section items -->
+                            <div class="content-section-container">
+                                
+                                <!-- Item -->
+                                <div class="content-item clearfix">
+                                    <div class="content-item-portrait">
+                                        <div class="portrait-wrapper">
+                                        <img src="./img/portrait.jpg" alt="Портрет">
+                                        </div>
+                                    </div>
+                                    
+                                    <ul class="content-item-main_info">
+                                        <li class="main_info-entry clearfix">
+                                            <div class="main_info-key">Меня зовут:</div>
+                                            <div class="main_info-value full-name">Сапожников Игорь Александрович</div>
+                                        </li>
+                                        <li class="main_info-entry clearfix">
+                                            <div class="main_info-key">Мой возраст:</div>
+                                            <div class="main_info-value age">31 год</div>
+                                        </li>
+                                        <li class="main_info-entry clearfix">
+                                            <div class="main_info-key">Мой город:</div>
+                                            <div class="main_info-value city">Самара, Россия</div>
+                                        </li>
+                                        <li class="main_info-entry clearfix">
+                                            <div class="main_info-key">Моя специализация:</div>
+                                            <div class="main_info-value specialty">FRONTEND разработчик</div>
+                                        </li>
+                                        <li class="main_info-entry clearfix">
+                                            <div class="skill-container clearfix">
+                                                <div class="main_info-key">Ключевые навыки:</div>
+                                                <ul class="label-size">                                
+                                                        <li>HTML</li>
+                                                        <li>CSS</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        <!-- Section -->
+                        <div class="main-content-section">
+                            
+                            <!-- Section header -->
+                            <h3 class="content-section-header">Опыт работы</h3>                
+                            
+                            
+                            <!-- Section items -->
+                            <div class="content-section-container">
+                                
+                                <!-- Item -->
+                                <div class="content-item clearfix">
+                                    <div class="content-item-icon">
+                                        <div class="sprite brief-case-icon"></div>
+                                    </div>
+                                    <div class="content-item-description">
+                                        <div class="content-item-place">"ИП Боровицкий" - Продавец дисков</div>
+                                        <div class="content-item-period">Сентябрь 2005 - Август 2008</div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Item -->
+                                <div class="content-item clearfix">
+                                    <div class="content-item-icon">
+                                        <div class="sprite brief-case-icon"></div>
+                                    </div>
+                                    <div class="content-item-description">
+                                        <div class="content-item-place">ООО "Системы безопасности" - Системный администратор</div>
+                                        <div class="content-item-period">Июнь 2008 - Июль 2010</div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Item -->
+                                <div class="content-item clearfix">
+                                    <div class="content-item-icon">
+                                        <div class="sprite brief-case-icon"></div>
+                                    </div>
+                                    <div class="content-item-description">
+                                        <div class="content-item-place">"Магнит, Розничная сеть" - Ведущий аналитик по внедрению Oracle Web Center</div>
+                                        <div class="content-item-period">Август 2011 - Октябрь 2012</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Section -->
+                        <div class="main-content-section">
+                            
+                            <!-- Section header -->
+                            <h3 class="content-section-header">Образование</h3>                
+                            
+                            
+                            <!-- Section items -->
+                            <div class="content-section-container">
+
+                                <!-- Item -->
+                                <div class="content-item clearfix">
+                                    <div class="content-item-icon">
+                                        <div class="sprite school-icon"></div>
+                                    </div>
+                                    <div class="content-item-description">
+                                        
+                                            <div class="content-item-place">Полное среднее. Физико-математический лицей №30</div>
+                                            <div class="content-item-period">1994 - 2004</div>
+                                        
+                                    </div>
+                                </div>
+                                
+                                <!-- Item -->
+                                <div class="content-item clearfix">
+                                    <div class="content-item-icon">
+                                        <div class="sprite graduate-icon"></div>
+                                    </div>
+                                    <div class="content-item-description">
+                                        <div class="content-item-place">Незаконченное высшее. СПБГУ ИТМО</div>
+                                        <div class="content-item-period">Октябрь 2012 - по настоящее время</div>
+                                    </div>
+                                </div>
+                            
+                                <!-- Item -->
+                                <div class="content-item clearfix">
+                                    <div class="content-item-icon">
+                                        <div class="sprite cources-icon"></div>
+                                    </div>
+                                    
+                                    <div class="content-item-description">
+                                        <div class="content-item-place">Курсы Loftschool.ru</div>
+                                        <div class="content-item-period">Ноябрь 2014 - по настоящее время</div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+                </div>
+            </div>          
+                <!-- Footer -->
+                <footer class="footer">
+                    <div class="footer-content">
+                        <a href="" class="login clearfix">
+                            <div class="sprite sprite-locked"></div>
+                            <div class="login-button">вход</div>
+                        </a>
+                        <p class="footer-copyright">&#169; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
+                    </div>
+                </footer>
+            
     </body>
-</html>
+    </html>
