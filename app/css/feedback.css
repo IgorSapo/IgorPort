@@ -1,0 +1,227 @@
+.feedback-form-container {
+    width: 403px;
+    min-height: 300px;
+    margin: -9px auto 0 auto;
+    padding: 0;
+    border: 0;
+}
+
+.feedback-sender_name {
+    height: 68px;
+    width: 192px;
+    float: left;
+}
+
+.feedback-sender_email {
+    height: 68px;
+    width: 193px;
+    float: right;
+}
+
+.feedback-sender_name_email-container {
+    width: 100%;
+    /* height: 80px;    */
+    margin-bottom: 12px;
+}
+
+.feedback-message {
+    height: 222px;
+}
+
+.feedback-cpatcha-container {
+    margin-top: 6px;
+    margin-bottom: 31px;
+}
+
+.feedback-captcha-image {
+    width: 189px;
+    height: 77px;
+    float: left;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d6d5d3;
+    background-color: #fbfcfd;
+
+}
+
+.feedback-captcha-input {
+    width: 192px;
+    height: 79px;
+    float: right;
+}
+
+.feedback-buttons-container {
+    height: 39px;
+}
+
+#feedback-send_button {
+    /* width: 200px;
+    height: 39px; */
+    display: block;
+    float: left;
+    
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c3c2c2;
+        background-color: #75d3b1;
+    /* background: -webkit-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
+    background: -moz-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
+    background: -o-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
+    background: -ms-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
+    background: linear-gradient(0deg, #3aa087 0%, #5fdcbd 100%);*/
+    
+    background: -webkit-linear-gradient(90deg, #43b796 0%, #80e8cb 100%);
+    background: -moz-linear-gradient(90deg, #43b796 0%, #80e8cb 100%);
+    background: -o-linear-gradient(90deg, #43b796 0%, #80e8cb 100%);
+    background: -ms-linear-gradient(90deg, #43b796 0%, #80e8cb 100%);
+    background: linear-gradient(0deg, #43b796 0%, #80e8cb 100%);
+    box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16);
+    
+    width: 121px;
+    height: 40px;
+    
+    margin-left: 29px;
+    
+    font-family: "Open Sans Bold", Arial , Helvetica, sans-serif;
+    color: #1e7465;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+#feedback-send_button:hover {
+        background-color: #62c1a2;
+    background: -webkit-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
+background: -moz-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
+background: -o-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
+background: -ms-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
+background: linear-gradient(0deg, #3aa087 0%, #5fdcbd 100%);
+}
+
+#feedback-send_button:active {
+        color: #eeedec;
+    text-shadow: 0px 1px 0px #666565;
+        background-color: #4e9c83;
+    background: -webkit-linear-gradient(90deg, #3eb799 0%, #7ee8ce 100%);
+background: -moz-linear-gradient(90deg, #3eb799 0%, #7ee8ce 100%);
+background: -o-linear-gradient(90deg, #3eb799 0%, #7ee8ce 100%);
+background: -ms-linear-gradient(90deg, #3eb799 0%, #7ee8ce 100%);
+background: linear-gradient(0deg, #3eb799 0%, #7ee8ce 100%);
+box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16);
+}
+
+
+#feedback-clear_button {
+    /* width: 200px;
+    height: 39px; */
+    float: right;
+    
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c3c2c2;
+    background-color: #f1efee;
+    background: -webkit-linear-gradient(90deg, #e9e6e4 0%, #fbf9f9 94%, #ffffff 100%);
+    background: -moz-linear-gradient(90deg, #e9e6e4 0%, #fbf9f9 94%, #ffffff 100%);
+    background: -o-linear-gradient(90deg, #e9e6e4 0%, #fbf9f9 94%, #ffffff 100%);
+    background: -ms-linear-gradient(90deg, #e9e6e4 0%, #fbf9f9 94%, #ffffff 100%);
+    background: linear-gradient(0deg, #e9e6e4 0%, #fbf9f9 94%, #ffffff 100%);
+    box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07);
+    width: 121px;
+    height: 40px;
+    margin-right: 30px;
+    
+    font-family: "Open Sans", Arial , Helvetica, sans-serif;
+    color: #727070;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+#feedback-clear_button:hover {
+    border-color: #c1c1c1;
+    background-color: #d7d4d4;
+    background: -webkit-linear-gradient(90deg, #c0bebe 0%, #e2e0e0 86%, #e7e6e6 90%, #e7e6e6 100%);
+    background: -moz-linear-gradient(90deg, #c0bebe 0%, #e2e0e0 86%, #e7e6e6 90%, #e7e6e6 100%);
+    background: -o-linear-gradient(90deg, #c0bebe 0%, #e2e0e0 86%, #e7e6e6 90%, #e7e6e6 100%);
+    background: -ms-linear-gradient(90deg, #c0bebe 0%, #e2e0e0 86%, #e7e6e6 90%, #e7e6e6 100%);
+    background: linear-gradient(0deg, #c0bebe 0%, #e2e0e0 86%, #e7e6e6 90%, #e7e6e6 100%);
+}
+
+#feedback-clear_button:active {
+    color: #eeedec;
+    text-shadow: 0px 1px 0px #666565;
+    border-color: #c3c2c2;
+    background-color: #929090;
+    background: -webkit-linear-gradient(90deg, #7b7878 0%, #a9a8a8 100%);
+    background: -moz-linear-gradient(90deg, #7b7878 0%, #a9a8a8 100%);
+    background: -o-linear-gradient(90deg, #7b7878 0%, #a9a8a8 100%);
+    background: -ms-linear-gradient(90deg, #7b7878 0%, #a9a8a8 100%);
+    background: linear-gradient(0deg, #7b7878 0%, #a9a8a8 100%);
+    box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.22);
+}
+
+#feedback_mainmessage {
+    width: 390px;
+    border-radius: 4px;
+    border-color: #D6D5D3;
+    border-style: solid;
+    border-width: 1px;
+    height: 173px;
+    margin-top: 7px;
+    margin-bottom: 11px;
+    resize: none;
+    
+    font-family: "Open Sans", Arial , Helvetica, sans-serif;
+    color: #c7c6c6;
+    font-size: 12px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: left;
+    padding-top: 8px;
+    padding-left: 10px;
+}
+
+#sender_name {
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d6d5d3;
+    background-color: #fbfcfd;
+    width: 181px;
+    height: 37px;
+    margin-top: 7px;
+    padding-left: 8px; 
+}
+
+#sender_email {
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d6d5d3;
+    background-color: #fbfcfd;
+    width: 181px;
+    height: 37px;
+    margin-top: 7px;
+    padding-left: 8px; 
+}
+
+.feedback-label {
+    font-size: 14px;
+    font-family: "Open Sans Regular", Arial , Helvetica, sans-serif;
+    color: #727070;
+}
+
+#captcha-input {
+    width: 180px;
+    height: 28px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d6d5d3;
+    background-color: #fbfcfd;
+    margin-top: 21px;
+    padding-left: 8px;
+}

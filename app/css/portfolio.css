@@ -1,0 +1,492 @@
+.portfolio-list-container {
+    display: block;
+    width: 600px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+.portfolio-item {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #b5b5b5;
+    background-color: #fff;
+    box-shadow: 0px 2px 1px 0px rgba(17, 17, 17, 0.07);
+    width: 164px;
+    /* height: 215px; */
+    overflow: hidden;
+    margin: 0 29px 33px 0;
+}
+
+.portfolio-item:nth-child(3) {
+    margin: 0 0 33px 0;
+}
+
+.portfolio-image-container {    
+      margin: 0;
+  padding: 0;
+  line-height: 0;
+  height: 120px;
+    width: 166px;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.portfolio-image {
+    width: 166px;
+    height: 120px;
+    z-index: 1;
+}
+
+.portfolio-image-container-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  bottom: -120px;
+  transition: 0.2s all;
+}
+
+.portfolio-image-container:hover .portfolio-image-container-hover {
+  bottom: 0;
+  transition: 0.2s all;
+}
+
+.portfolio-image-hover-link {
+  width: 81px;
+  text-align: center;
+  line-height: 22px;
+  height: 22px;
+  margin-top: 48px;
+  background: #f2f1f0;
+  position: absolute;
+  color: #343434;
+  border-radius: 5px;
+  right: -82px;
+  transition: 0s all 0.2s;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.portfolio-image-container:hover .portfolio-image-hover-link {
+    font-family: "Open Sans Regular", sans serif;
+  right: 42px;
+  transition: 0.1s all ease-in 0.2s; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portfolio-link {
+    display: block;
+    background-color: #f2f2f2;
+    /* width: 146px; */
+    height: 25px;
+    
+    font-family: "Open Sans Semibold", sans-serif;
+    color: #727070;
+    font-size: 13.35px;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+    text-align: center;
+    padding: 5px 10px 3px 10px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.portfolio-description {
+    padding: 10px;
+    /* width: 146px; */
+    text-align: center;
+    
+    font-family: "Open Sans Regular", Arial , Helvetica, sans-serif;
+    color: #727070;
+    font-size: 12px; /* Приближение из-за подстановки шрифтов */
+    padding: 4px;
+    
+line-height: 16px; /* Приближение из-за подстановки шрифтов */
+}
+
+.add_new_project {
+    display: block;
+    background-color: #f7f7f7;
+    background: -webkit-linear-gradient(90deg, #edebea 0%, #fbf9f9 94%, #ffffff 100%);
+    background: -moz-linear-gradient(90deg, #edebea 0%, #fbf9f9 94%, #ffffff 100%);
+    background: -o-linear-gradient(90deg, #edebea 0%, #fbf9f9 94%, #ffffff 100%);
+    background: -ms-linear-gradient(90deg, #edebea 0%, #fbf9f9 94%, #ffffff 100%);
+    background: linear-gradient(0deg, #edebea 0%, #fbf9f9 94%, #ffffff 100%);
+    box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07);
+    height: 107px;
+    margin: 0;
+    padding-top: 25px;
+    text-decoration: none;
+}
+
+.add_new_project:hover {
+    background-color:#d9d6d6;
+background: -webkit-linear-gradient(90deg, #c2c0c0 0%, #e3e1e1 86%, #e8e7e7 90%, #e8e7e7 100%);
+background: -moz-linear-gradient(90deg, #c2c0c0 0%, #e3e1e1 86%, #e8e7e7 90%, #e8e7e7 100%);
+background: -o-linear-gradient(90deg, #c2c0c0 0%, #e3e1e1 86%, #e8e7e7 90%, #e8e7e7 100%);
+background: -ms-linear-gradient(90deg, #c2c0c0 0%, #e3e1e1 86%, #e8e7e7 90%, #e8e7e7 100%);
+background: linear-gradient(0deg, #c2c0c0 0%, #e3e1e1 86%, #e8e7e7 90%, #e8e7e7 100%);
+}
+
+.add_new_project:hover > .new_project-button-icon-wrapper {
+    background-color: #d7d7d7;
+    box-shadow: 0px 1px 0px 0px #ffffff;
+}
+
+
+
+
+.add_new_project-image {
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    box-shadow: 0px 1px 0px 0px #ffffff;
+    width: 53px;
+    height: 54px;
+    background-color: lightgreen;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.add_new_project-button {
+    font-family: "Open Sans Bold", sans-serif;
+    color: #727070;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+.form-add_new_project {
+    display: block;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c3c2c2;
+
+    background-color: #f5f4f3;
+    /* background: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+    background: -moz-linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+    background: -o-linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+    background: -ms-linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
+    box-shadow: 5px 10px 27px 0px rgba(159, 159, 159, 0.75); */
+    /* Layer contains multiple layer styles that cannot be represented in CSS. Use the color picker or extract the layer as an image. */
+    width: 320px;
+    height: 442px;
+    font-size: 14px;
+    padding: 19px 21px 0px 21px;
+    position: relative;
+}
+
+.form-add_new_project-textfield {
+    border-radius: 4px;
+  border: 1px solid #d6d5d3;
+    box-sizing: border-box;
+    background-color: /* #fbfcfd;*/ #f8fafb;
+    width: 100%;
+    height: 41px;
+    margin-top: 8px;
+    margin-bottom: 6px;
+    padding-left: 9px;
+    position: relative;
+    font-size: 12px;
+}
+.upload-button {
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+}
+
+.form-add_new_project-project_image {
+  border: none;
+  clip: rect(0 0 0 0);
+  height: 0px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+.addproject_field_box {
+    margin-top: 8px;
+    margin-bottom: 6px;
+    position: relative;
+    width: 320px;
+}
+
+.add_proj_file_button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  height: 41px;
+  width: 53px;
+  box-sizing: border-box;
+  border-radius: 0px 4px 4px 0;
+  border: 1px solid #c3c2c2;
+
+background: -webkit-linear-gradient(90deg, #e9e6e5 0%, #fbf9f9 94%, #ffffff 100%);
+background: -moz-linear-gradient(90deg, #e9e6e5 0%, #fbf9f9 94%, #ffffff 100%);
+background: -o-linear-gradient(90deg, #e9e6e5 0%, #fbf9f9 94%, #ffffff 100%);
+background: -ms-linear-gradient(90deg, #e9e6e5 0%, #fbf9f9 94%, #ffffff 100%);
+background: linear-gradient(0deg, #e9e6e5 0%, #fbf9f9 94%, #ffffff 100%);
+box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07);
+}
+
+.add_proj_file_button:after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 18px;
+    background-image: url("../img/spritesheet1.png");
+    background-position: -87px -98px;
+    background-repeat: no-repeat;
+    /* width: 25px;
+    height: 17px; */
+    position: absolute;
+    top: 11px;
+    left: 14px;
+    box-shadow: 0px 1px 0px 0px #ffffff;
+}
+
+.add_proj_text_input {
+  background-color: #F8FAFB;
+  border: 1px solid #d6d5d3;
+  border-radius: 4px;
+  font-size: 12px;
+  width: 100%;
+  height: 41px;
+  line-height: 43px;
+  display: block;
+  padding-left: 12px;
+  box-sizing: border-box;
+  position: relative;}
+
+.fileupload {
+  border: none;
+  clip: rect(0 0 0 0);
+  height: 0px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 0px; }
+
+.add_proj_textarea {
+  border: 1px solid #d6d5d3;
+  border-radius: 5px;
+  font-size: 12px;
+  width: 100%;
+  display: block;
+  padding-left: 12px;
+  padding-top: 14px;
+  box-sizing: border-box;
+  resize: none;
+  position: relative;
+}
+
+#form-add_new_project-project_description {
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d6d5d3;
+    background-color: #fbfcfd;
+    /* background: -webkit-linear-gradient(90deg, rgba(233, 231, 231, 0.45) 0%, rgba(251, 249, 249, 0) 100%);
+    background: -moz-linear-gradient(90deg, rgba(233, 231, 231, 0.45) 0%, rgba(251, 249, 249, 0) 100%);
+    background: -o-linear-gradient(90deg, rgba(233, 231, 231, 0.45) 0%, rgba(251, 249, 249, 0) 100%);
+    background: -ms-linear-gradient(90deg, rgba(233, 231, 231, 0.45) 0%, rgba(251, 249, 249, 0) 100%);
+    background: linear-gradient(0deg, rgba(233, 231, 231, 0.45) 0%, rgba(251, 249, 249, 0) 100%);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.35); */
+    /* Layer contains multiple layer styles that cannot be represented in CSS. Use the color picker or extract the layer as an image. */
+    width: 308px;
+    height: 100px;
+    resize: none;
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    padding-top: 9px;
+    padding-left: 9px;
+}
+
+.form-add_new_project-label {
+    font-family: "Open Sans Regular", Arial , Helvetica, sans-serif;
+    color: #727070;
+    font-size: 14px;
+}
+
+
+#form-add_new_project-sumbit {
+    display: block;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    /* border-color: #c3c2c2; */
+    background-color: #75d3b1;
+    background: -webkit-linear-gradient(90deg, #43b796 0%, #80e8cb 100%);
+    background: -moz-linear-gradient(90deg, #43b796 0%, #80e8cb 100%);
+    background: -o-linear-gradient(90deg, #43b796 0%, #80e8cb 100%);
+    background: -ms-linear-gradient(90deg, #43b796 0%, #80e8cb 100%);
+    background: linear-gradient(0deg, #43b796 0%, #80e8cb 100%);
+    box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16), inset 0px 1px 0px 0px #b4f4dc;
+    width: 121px;
+    height: 40px; 
+    margin: 0 auto;
+    
+    font-family: "Open Sans Bold", Arial , Helvetica, sans-serif;
+    color: #1e7465;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    line-height: 22px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.75);
+    
+    border-color: #80e1bf #59b798 #4fa786;;
+}
+
+#form-add_new_project-sumbit:hover {
+    background-color: #62c1a2;
+    background: -webkit-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
+background: -moz-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
+background: -o-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
+background: -ms-linear-gradient(90deg, #3aa087 0%, #5fdcbd 100%);
+background: linear-gradient(0deg, #3aa087 0%, #5fdcbd 100%);
+}
+
+#form-add_new_project-sumbit:active {
+    color: #eeedec;
+    text-shadow: 0px 1px 0px #666565;
+    background-color: #4e9c83;
+    background: -webkit-linear-gradient(90deg, #3eb799 0%, #7ee8ce 100%);
+    background: -moz-linear-gradient(90deg, #3eb799 0%, #7ee8ce 100%);
+    background: -o-linear-gradient(90deg, #3eb799 0%, #7ee8ce 100%);
+    background: -ms-linear-gradient(90deg, #3eb799 0%, #7ee8ce 100%);
+    background: linear-gradient(0deg, #3eb799 0%, #7ee8ce 100%);
+    box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16), inset 0px 1px 0px 0px #95d5bf;
+}
+
+.cloud-button {
+    background-color: lightgreen;
+    box-shadow: 0px 1px 0px 0px #ffffff;
+    width: 25px;
+    height: 17px;
+    position: relative;
+    top: 11px;
+    left: 14px;
+}
+
+.form-add_new_project-header {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    position: absolute;
+    top: -22px;
+    
+    font-family: "Open Sans Regular", Arial , Helvetica, sans-serif;
+    /* color: #f8f7f6; */
+    color: #fff;
+    font-size: 11.5px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+}
+
+.form-close_button {
+    background-image: url(../img/spritesheet1.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+}
+
+.b-popup {
+    display: none;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+}
+
+.b-popup-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto auto;
+}
+
+.new_project-button-icon-wrapper {
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    width: 53px;
+    height: 54px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    border-top: 1px solid #d0d0d0;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #d0d0d0;
+    border-bottom: 1px solid #fff;
+}
+
+.sprite-X {
+    width: 14px;
+    height: 14px;
+    background-position: -5px -5px;
+}
+
+.sprite-new_project-button-icon {
+    width: 20px;
+    height: 20px;
+    background-position: -57px -94px;
+}
+
+.sprite-new_project-upload-icon {
+    width: 25px;
+    height: 18px;
+    background-position: -87px -98px;
+}
