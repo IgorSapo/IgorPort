@@ -36,30 +36,29 @@
             <header class="header">
                 <div class="header-content clearfix">
                     
-                    <!-- Logo -->
-                    <a class="header-logo" href=""><img src="img/logo2.png" alt="LoftSchool"></a>
+                    <!-- Logo1 -->
+                    <div class="header-logo">
+                        <img class="header-logo-image" src="img/logo2.png" alt="LoftSchool">
+                        <a class="header-logo-link" href="">Мое портфолио</a>
+                    </div>
                     
                     <!-- Social buttons -->
                     <ul class="header-social">
-                        <li class="header-social-facebook">
-                            <a class="facebook-link sprite sprite-social-circle-background" href="">
-                                <div class="sprite facebook-icon"></div>
-                            </a>
+                        <li class="header-social-facebook sprite sprite-social-circle-background">
+                            <div class="sprite facebook-icon"></div>
+                            <a class="facebook-link" href="">Моя страница на Facebook</a>
                         </li>
-                        <li class="header-social-vk">
-                            <a class="vk-link sprite sprite-social-circle-background" href="">
-                                <div class="sprite vk-icon"></div>
-                            </a>
+                        <li class="header-social-vk sprite sprite-social-circle-background">
+                            <div class="sprite vk-icon"></div>
+                            <a class="vk-link" href="">Моя страница на Вконтакте</a>
                         </li>
-                        <li class="header-social-twitter">
-                            <a class="twitter-link sprite sprite-social-circle-background" href="">
-                                <div class="sprite twitter-icon"></div>
-                            </a>
+                        <li class="header-social-twitter sprite sprite-social-circle-background">
+                            <div class="sprite twitter-icon"></div>
+                            <a class="twitter-link" href="">Моя страница в Twitter</a>
                         </li>
-                        <li class="header-social-github">
-                            <a class="github-link sprite sprite-social-circle-background" href="">
-                                <div class="sprite github-icon"></div>
-                            </a>
+                        <li class="header-social-github sprite sprite-social-circle-background">
+                            <div class="sprite github-icon"></div>
+                            <a class="github-link" href="">Моя страница на Github</a>
                         </li>
                     </ul>
                 </div>     
@@ -81,26 +80,26 @@
                             <div class="contacts-header">Контакты</div>
                             <ul class="contacts-list">
                                 <li class="contacts-item">
-                                    <a href="mailto:amsterdam1611@gmail.com">
-                                        <div class="contacts-icon-container">
-                                            <div class="sprite email-icon"></div>
-                                        </div>
+                                    <div class="contacts-icon-container">
+                                        <div class="sprite email-icon"></div>
+                                    </div>
+                                    <a href="mailto:amsterdam1611@gmail.com">    
                                         amsterdam1611@gmail.com
                                     </a>
                                 </li>
                                 <li class="contacts-item">
-                                    <a href="tel:+79047460749">
-                                        <div class="contacts-icon-container">
-                                            <div class="sprite phone-icon"></div>
-                                        </div>
+                                    <div class="contacts-icon-container">
+                                        <div class="sprite phone-icon"></div>
+                                    </div>
+                                    <a href="tel:+79047460749">    
                                         +79047460749
                                     </a>
                                 </li>
                                 <li class="contacts-item">
-                                    <a href="skype:igor.sapoghnikoff">
-                                        <div class="contacts-icon-container">
-                                            <div class="sprite skype-icon"></div>
-                                        </div>
+                                    <div class="contacts-icon-container">
+                                        <div class="sprite skype-icon"></div>
+                                    </div>
+                                    <a href="skype:igor.sapoghnikoff">    
                                         igor.sapoghnikoff
                                     </a>
                                 </li>
@@ -129,53 +128,42 @@
                                 <form class="feedback-form-container clearfix">
                                     <div class="feedback-sender_name_email-container clearfix">
                                         <div class="feedback-sender_name">
-                                            <label class="feedback-label">Имя</label></br>
-                                            <input type="text" name="sender_name" id="sender_name" placeholder="Как к Вам обращаться">
+                                            <label class="feedback-label">Имя</label>
+                                            <input type="text" name="sender_name" id="sender_name" required placeholder="Как к Вам обращаться">
                                         </div>
+                                        
                                         <div class="feedback-sender_email">
-                                            <label class="feedback-label">Email</label></br>
-                                            <input type="email" name="sender_email" id="sender_email" placeholder="Куда мне писать">
+                                            <label class="feedback-label">Email</label>
+                                            <div class="feedback-sender_email-wrap">
+                                                <input type="email" name="sender_email" id="sender_email" required placeholder="Куда мне писать">
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- <div class="feedback-message"> -->
-                                        <label class="feedback-label">Сообщение</label></br>
-                                            <textarea name="sender_name" id="feedback_mainmessage" placeholder="Кратко в чем суть"></textarea>
-                                    <!-- </div> -->
-                                    <label class="feedback-label" for="captcha-input">Введите код, указанный на картинке</label>
+                                    <div class="feedback-message">
+                                        <label class="feedback-label">Сообщение</label>
+                                            <textarea name="feedback_mainmessage" id="feedback_mainmessage" required placeholder="Кратко в чем суть"></textarea>
+                                    </div>
+                                    <label class="feedback-label" for="captcha_input">Введите код, указанный на картинке</label>
                                     <div class="feedback-cpatcha-container clearfix">
                                        
                                         <div class="feedback-captcha-image">
                                         </div>
                                         <div class="feedback-captcha-input">
-                                            <input type="text" name="sender_name" id="captcha-input" placeholder="Введите код">
+                                            <input type="text" name="captcha_input" id="captcha_input" placeholder="Введите код">
                                         </div>
                                     </div>
                                     <div class="feedback-buttons-container clearfix">
-                                        <input type="submit" id="feedback-send_button" name="feedback-send_button" value="Отправить">
-                                        <input type="reset" id="feedback-clear_button" name="feedback-clear_button" value="Очистить">
+                                        <button type="submit" id="feedback-send_button" name="feedback-send_button" value="Отправить">Отправить</button>
+                                        <button type="reset" href="javascript:clearFeedbackForm()" id="feedback-clear_button" name="feedback-clear_button">Очистить</button>
                                     </div>
                                 </form>
-                                
                             </div>
                         </div>
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
                 </div>
-            </div>          
+            </div>
+            </div>
                 <!-- Footer -->
                 <footer class="footer">
                     <div class="footer-content">
@@ -186,6 +174,12 @@
                         <p class="footer-copyright">&#169; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
                     </div>
                 </footer>
-            
+
+
+                <!-- <script src="bower/jquery/dist/jquery.js"></script> -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                <script src="bower/jquery-validation/dist/jquery.validate.js"></script>
+                <script src="bower/jquery-placeholder/jquery.placeholder.min.js"></script>
+                <script src="js/main.js"></script>
     </body>
     </html>

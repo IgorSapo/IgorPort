@@ -72,7 +72,7 @@
     box-shadow: 3px 2px 26.88px 5.12px rgba(234, 231, 226, 0.75);
     /* background: #f6f5f5; */
     background-color: #F5F4F3;
-    /* border: 1px solid #cdcccb; */
+    border: 1px solid #cdcccb;
     /* padding: 9px 0 0 9px; */
 }
 
@@ -275,3 +275,8 @@ max-width: 210px;
 
 /* === End of Main section icons === */
 
+.portrait-image {
+  border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+}

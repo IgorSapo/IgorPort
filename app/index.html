@@ -23,7 +23,6 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/about-me.css">
         <link rel="stylesheet" href="css/fonts.css">
-        <link rel="stylesheet" href="css/about-me.css">
         <!-- JS -->
         <script src="bower/modernizer/modernizr.js"></script>
     </head>
@@ -36,29 +35,28 @@
                 <div class="header-content clearfix">
                     
                     <!-- Logo1 -->
-                    <a class="header-logo" href=""><img src="img/logo2.png" alt="LoftSchool"></a>
+                    <div class="header-logo">
+                        <img class="header-logo-image" src="img/logo2.png" alt="LoftSchool">
+                        <a class="header-logo-link" href="">Мое портфолио</a>
+                    </div>
                     
                     <!-- Social buttons -->
                     <ul class="header-social">
-                        <li class="header-social-facebook">
-                            <a class="facebook-link sprite sprite-social-circle-background" href="">
-                                <div class="sprite facebook-icon"></div>
-                            </a>
+                        <li class="header-social-facebook sprite sprite-social-circle-background">
+                            <div class="sprite facebook-icon"></div>
+                            <a class="facebook-link" href="">Моя страница на Facebook</a>
                         </li>
-                        <li class="header-social-vk">
-                            <a class="vk-link sprite sprite-social-circle-background" href="">
-                                <div class="sprite vk-icon"></div>
-                            </a>
+                        <li class="header-social-vk sprite sprite-social-circle-background">
+                            <div class="sprite vk-icon"></div>
+                            <a class="vk-link" href="">Моя страница на Вконтакте</a>
                         </li>
-                        <li class="header-social-twitter">
-                            <a class="twitter-link sprite sprite-social-circle-background" href="">
-                                <div class="sprite twitter-icon"></div>
-                            </a>
+                        <li class="header-social-twitter sprite sprite-social-circle-background">
+                            <div class="sprite twitter-icon"></div>
+                            <a class="twitter-link" href="">Моя страница в Twitter</a>
                         </li>
-                        <li class="header-social-github">
-                            <a class="github-link sprite sprite-social-circle-background" href="">
-                                <div class="sprite github-icon"></div>
-                            </a>
+                        <li class="header-social-github sprite sprite-social-circle-background">
+                            <div class="sprite github-icon"></div>
+                            <a class="github-link" href="">Моя страница на Github</a>
                         </li>
                     </ul>
                 </div>     
@@ -80,26 +78,26 @@
                             <div class="contacts-header">Контакты</div>
                             <ul class="contacts-list">
                                 <li class="contacts-item">
-                                    <a href="mailto:amsterdam1611@gmail.com">
-                                        <div class="contacts-icon-container">
-                                            <div class="sprite email-icon"></div>
-                                        </div>
+                                    <div class="contacts-icon-container">
+                                        <div class="sprite email-icon"></div>
+                                    </div>
+                                    <a href="mailto:amsterdam1611@gmail.com">    
                                         amsterdam1611@gmail.com
                                     </a>
                                 </li>
                                 <li class="contacts-item">
-                                    <a href="tel:+79047460749">
-                                        <div class="contacts-icon-container">
-                                            <div class="sprite phone-icon"></div>
-                                        </div>
+                                    <div class="contacts-icon-container">
+                                        <div class="sprite phone-icon"></div>
+                                    </div>
+                                    <a href="tel:+79047460749">    
                                         +79047460749
                                     </a>
                                 </li>
                                 <li class="contacts-item">
-                                    <a href="skype:igor.sapoghnikoff">
-                                        <div class="contacts-icon-container">
-                                            <div class="sprite skype-icon"></div>
-                                        </div>
+                                    <div class="contacts-icon-container">
+                                        <div class="sprite skype-icon"></div>
+                                    </div>
+                                    <a href="skype:igor.sapoghnikoff">    
                                         igor.sapoghnikoff
                                     </a>
                                 </li>
@@ -124,7 +122,7 @@
                                 <div class="content-item clearfix">
                                     <div class="content-item-portrait">
                                         <!-- <div class="portrait-wrapper"> -->
-                                            <img src="./img/portraitnew.jpg" alt="Портрет">
+                                            <img src="./img/portrait.jpg" alt="Портрет" class="portrait-image">
                                         <!-- </div> -->
                                     </div>
                                     
@@ -251,7 +249,8 @@
                             </div>
                         </div>
                 </div>
-            </div>          
+            </div>
+        </div>          
                 <!-- Footer -->
                 <footer class="footer">
                     <div class="footer-content">

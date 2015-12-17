@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+    <head>        
+        <title>Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- SEO -->
+        <meta name="descriprion" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        
+          
+        <!--[if lt IE 9]>
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+  	    <![endif]-->
+        
+        <!-- Bower CSS -->
+        <link rel="stylesheet" href="bower/normalize-css/normalize.css">    
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/portfolio.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/about-me.css">
+        <!-- JS -->
+        <script src="bower/modernizer/modernizr.js">
+</script>
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            
+            <!-- Header -->
+            <header class="header">
+                <div class="header-content clearfix">
+                    
+                    <!-- Logo -->
+                    <a class="header-logo" href=""><img src="img/logo2.png" alt="LoftSchool"></a>
+                    
+                    <!-- Social buttons -->
+                    <ul class="header-social">
+                        <li class="header-social-facebook">
+                            <a class="facebook-link sprite sprite-social-circle-background" href="">
+                                <div class="sprite facebook-icon"></div>
+                            </a>
+                        </li>
+                        <li class="header-social-vk">
+                            <a class="vk-link sprite sprite-social-circle-background" href="">
+                                <div class="sprite vk-icon"></div>
+                            </a>
+                        </li>
+                        <li class="header-social-twitter">
+                            <a class="twitter-link sprite sprite-social-circle-background" href="">
+                                <div class="sprite twitter-icon"></div>
+                            </a>
+                        </li>
+                        <li class="header-social-github">
+                            <a class="github-link sprite sprite-social-circle-background" href="">
+                                <div class="sprite github-icon"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>     
+            </header>
+            
+            <!-- Main -->
+            <div class="main clearfix">
+                
+                    <!-- Navigation -->
+                    <div class="aside">
+                        
+                        <ul class="main-nav">
+                            <li class="main-nav-item"><a href="./index.html">Обо мне</a></li>
+                            <li class="main-nav-item-active"><a href="./portfolio.html">Мои работы</a></li>
+                            <li class="main-nav-item"><a href="./feedback.html">Обратная связь</a></li>
+                        </ul>
+                        
+                        <div class="contacts">
+                            <div class="contacts-header">Контакты</div>
+                            <ul class="contacts-list">
+                                <li class="contacts-item">
+                                    <a href="mailto:amsterdam1611@gmail.com">
+                                        <div class="contacts-icon-container">
+                                            <div class="sprite email-icon"></div>
+                                        </div>
+                                        amsterdam1611@gmail.com
+                                    </a>
+                                </li>
+                                <li class="contacts-item">
+                                    <a href="tel:+79047460749">
+                                        <div class="contacts-icon-container">
+                                            <div class="sprite phone-icon"></div>
+                                        </div>
+                                        +79047460749
+                                    </a>
+                                </li>
+                                <li class="contacts-item">
+                                    <a href="skype:igor.sapoghnikoff">
+                                        <div class="contacts-icon-container">
+                                            <div class="sprite skype-icon"></div>
+                                        </div>
+                                        igor.sapoghnikoff
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>   
+                    </div>
+                
+                    <!-- Main content -->
+                    <div class="main-content">
+
+                        <!-- Section -->
+                        <div class="main-content-section">
+                            <!-- Section header -->
+                            <h3 class="content-section-header">Мои работы</h3>
+                            <!-- Section items -->
+                            <div class="content-section-container">
+
+                            <!--    <form name="test_form" id="test_form" method="POST" data-validation="[NOTEMPTY]">
+                                    <label for="test_field" class="form-add_new_project-label">Название проекта</label><br>
+                                    <input type="text" id="test_field1" name="test_field1" class="test_field_class1" required placeholder="Введите текст"><br>
+                                    <input type="email" id="test_field2" name="test_field2" class="test_field_class2" required placeholder="Введите адрес"><br>
+                                    <input type="submit" id="form-add_new_project-sumbit" name="form-add_new_project-sumbit" value="Добавить" aria-required="true">
+                                </form> -->
+
+                            </div>
+                        </div>
+
+                        <!-- Section -->
+                       <div class="main-content-section">
+                            <!-- Section header -->
+                            <h3 class="content-section-header">Мои работы</h3>
+                            <!-- Section items -->
+                            <div class="content-section-container">
+
+                                <form id="feedback-form-container" class="clearfix">
+                                    <div class="feedback-sender_name_email-container clearfix">
+                                        <div class="feedback-sender_name">
+                                            <label class="feedback-label">Имя</label></br>
+                                            <input type="text" name="sender_name" id="sender_name" required placeholder="Как к Вам обращаться">
+                                        </div>
+                                        <div class="feedback-sender_email">
+                                            <label class="feedback-label">Email</label></br>
+                                            <input type="email" name="sender_email" id="sender_email" required placeholder="Куда мне писать">
+                                        </div>
+                                    </div>
+                                    <!-- <div class="feedback-message"> -->
+                                        <label class="feedback-label">Сообщение</label></br>
+                                            <textarea name="feedback_mainmessage" id="feedback_mainmessage" required placeholder="Кратко в чем суть"></textarea>
+                                    <!-- </div> -->
+                                    <label class="feedback-label" for="captcha-input">Введите код, указанный на картинке</label>
+                                    <div class="feedback-cpatcha-container clearfix">
+                                       
+                                        <div class="feedback-captcha-image">
+                                        </div>
+                                        <div class="feedback-captcha-input">
+                                            <input type="text" name="captcha_input" id="captcha_input" required placeholder="Введите код">
+                                        </div>
+                                    </div>
+                                    <div class="feedback-buttons-container clearfix">
+                                        <input type="submit" id="feedback-send_button" name="feedback-send_button" value="Отправить">
+                                        <input type="reset" id="feedback-clear_button" name="feedback-clear_button" value="Очистить">
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+            </div>
+            
+
+           
+        </div>
+                <!-- Footer -->
+                <footer class="footer">
+                    <div class="footer-content">
+                        <a href="" class="login clearfix">
+                            <div class="sprite sprite-locked"></div>
+                            <div class="login-button">вход</div>
+                        </a>
+                        <p class="footer-copyright">&#169; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
+                    </div>
+                </footer> 
+
+
+                <script src="bower/jquery/dist/jquery.min.js"></script>
+                <script src="bower/jquery-validation/dist/jquery.validate.js"></script>
+                <script src="js/main.js"></script>
+            
+    </body>
+    </html>
