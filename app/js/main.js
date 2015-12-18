@@ -110,3 +110,20 @@ function PopUpHide(){
 function failureHide() { // Hide error message above invalid "add_new_project" form
     $(".add_new_project-failure").hide();
 }
+
+    // Прослушка события: изменение инпута загрузки файла.
+    var setUpListnerFileupload = function (){
+        $('#fileupload').on('change', changefileUpload);
+    };
+
+    // Функция добавления имени файла в инпут "filename".
+    var changefileUpload = function (){
+        var 
+            input = $(this), // Инпут type="file"
+            name = input[0].files[0].name; // Имя загруженного файла
+        $('#filename').val(name); // Добавление имени в инпут "filename".
+    };
+
+    setUpListnerFileupload();
+
+    changefileUpload();
