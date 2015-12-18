@@ -1,16 +1,8 @@
-/* $.validator.setDefaults({
-        submitHandler: function() {
-            alert("submitted!");
-        }
-    }); */
-
-    $(document).ready(function() {
-        //Скрыть PopUp при загрузке страницы    
-        /* PopUpHide(); */
+$(document).ready(function() {
         
-    $('input, textarea').placeholder();
+    $('input, textarea').placeholder(); // Apply placeholder plugin
 
-    $(".feedback-form-container").validate({
+    $(".feedback-form-container").validate({ // Validate feedback form
         rules: {
             sender_name: "required",
             sender_email: {
@@ -28,26 +20,15 @@
             },
             feedback_mainmessage: "Ваш вопрос",
             captcha_input: "Код каптчи"
-        }/* ,
-        invalidHandler: function(event, validator) {
-            var errors = validator.numberOfInvalids();
-            if (errors) {
-              $(".add_new_project-failure").show();
-            } else {
-              $(".add_new_project-failure").hide();
-            }
-          }
-
-
-          /* ,
+        },
         submitHandler: function(form) {
-              $(".form-add_new_project").hide();
-              $(".add_new_project-success").show();
-          } */
-
+            ajaxSubmit(form); // Submit form via ajax
+            $("input").removeClass('valid');
+            $("textarea").removeClass('valid');
+          }
     });
 
-    $(".form-add_new_project").validate({
+    $(".form-add_new_project").validate({ // Validate new project form
         messages: {
             new_project_name: "Введите название",
             filename: "Изображение",
@@ -65,17 +46,34 @@
         submitHandler: function(form) {
               $(".form-add_new_project").hide();
               $(".add_new_project-success").show();
+              console.log("Скрыта форма");
+              ajaxSubmit(form); // Submit form via ajax
           }
 
     });
 
-var clearFeedbackForm = function () {
-    $("#feedback-clear_button").on("click", function() {
-        $("label").remove(".error");
-        $("input").removeClass('error');
-        $("input").removeClass('valid');
-        $("textarea").removeClass('error');
-        $("textarea").removeClass('valid');
+    var ajaxSubmit = function (submittedForm) { // Sumbit _valid_ form via ajax
+        console.log("Вызвана функция сабмита через ajax");
+        var str = $(submittedForm).serialize();
+        $.ajax ({
+                type: "POST",
+                cache: false,
+                url: "php/hello.php",
+                data: str,
+                success: function(serverResponse) {
+                    console.log(serverResponse);
+                }
+            });
+        $(submittedForm)[0].reset();
+    };
+
+    var clearFeedbackForm = function () { // Remove error tooltips and input borders on form reset
+        $("#feedback-clear_button").on("click", function() {
+            $("label").remove(".error");
+            $("input").removeClass('error');
+            $("input").removeClass('valid');
+            $("textarea").removeClass('error');
+            $("textarea").removeClass('valid');
     });
 };
 
@@ -91,13 +89,11 @@ overlayClick(); */
 
 });
 
-//Функция отображения PopUp
 function PopUpShow(){
     $("#popup1").show();
     $('input, textarea').placeholder();
 }
 
-//Функция скрытия PopUp
 function PopUpHide(){
     $(".add_new_project-success").hide();
     $(".add_new_project-failure").hide();
@@ -111,20 +107,6 @@ function PopUpHide(){
     $("#popup1").hide();
 }
 
-function failureHide() {
+function failureHide() { // Hide error message above invalid "add_new_project" form
     $(".add_new_project-failure").hide();
 }
-
-$("#test_form").submit( function(){
-    var str = $(this).serialize();
-    $.ajax({
-        type: "POST",
-        cache: false,
-        url: "php/hello.php",
-        data: str,
-        success: function(html) {
-            console.log(html);
-        }
-    })
-
-})
