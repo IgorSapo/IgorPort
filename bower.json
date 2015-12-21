@@ -1,8 +1,10 @@
 {
   "name": "igors_portfolio",
   "dependencies": {
-    "jquery": "~2.1.4",
-    "normalize-css": "normalize.css#~3.0.3",
-    "modernizer": "~2.8.2"
+    "normalize-css": "~3.0.3",
+    "modernizer": "~2.8.2",
+    "jquery": "1.9.1",
+    "jquery-validation": "~1.14.0",
+    "jquery-placeholder": "~2.3.1"
   }
 }

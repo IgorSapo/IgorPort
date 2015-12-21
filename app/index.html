@@ -17,14 +17,29 @@
             <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
   	    <![endif]-->
         
-        <!-- Bower CSS -->
-        <link rel="stylesheet" href="bower/normalize-css/normalize.css">    
-        <!-- CSS -->
+
+
+
+
+
+        <!--build:css css/vendor.min.css-->
+        <!--bower:css-->
+        <link rel="stylesheet" href="bower/normalize-css/normalize.css" />
+        <!--endbower-->
+        <!--endbuild-->
+
+        <!--build:css fonts/fonts.min.css-->
+        <link rel="stylesheet" href="css/fonts.css">
+        <!--endbuild-->
+
+        <!--build:css css/about-me.min.css-->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/about-me.css">
-        <link rel="stylesheet" href="css/fonts.css">
-        <!-- JS -->
+        <!--endbuild-->
+
+        <!--build:js js/modernizer/modernizer.min.js-->
         <script src="bower/modernizer/modernizr.js"></script>
+        <!--endbuild-->
     </head>
     
     <body>
@@ -261,6 +276,6 @@
                         <p class="footer-copyright">&#169; 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его.</p>
                     </div>
                 </footer>
-            
+
     </body>
     </html>

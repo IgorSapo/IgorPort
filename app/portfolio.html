@@ -17,16 +17,29 @@
         <!--[if lt IE 9]>
             <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
   	    <![endif]-->
-        
-        <!-- Bower CSS -->
-        <link rel="stylesheet" href="bower/normalize-css/normalize.css">    
-        <!-- CSS -->
+
+
+
+
+        <!--build:css css/vendor.min.css-->
+        <!--bower:css-->
+        <link rel="stylesheet" href="bower/normalize-css/normalize.css" />
+        <!--endbower-->
+        <!--endbuild-->
+
+        <!--build:css fonts/fonts.min.css-->
+        <link rel="stylesheet" href="css/fonts.css">
+        <!--endbuild-->
+
+        <!--build:css css/portfolio.min.css-->
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/portfolio.css">
-        <link rel="stylesheet" href="css/fonts.css">
-        <link rel="stylesheet" href="css/about-me.css">
-        <!-- JS -->
+        <!--endbuild-->
+
+        <!--build:js js/modernizer/modernizer.min.js-->
         <script src="bower/modernizer/modernizr.js"></script>
+        <!--endbuild-->
+        
     </head>
     
     <body>
@@ -267,12 +280,19 @@
                     </div>
                 </div>
 
-                
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+                <!--build:js js/vendor.min.js-->
+                <!-- bower:js -->
+                <script src="bower/jquery/jquery.js"></script>
+                <script src="bower/jquery-validation/dist/jquery.validate.js"></script>
                 <script src="bower/jquery-placeholder/jquery.placeholder.js"></script>
-                <script src="bower/jquery-validation/dist/jquery.validate.min.js"></script>
-                <script src="js/main.js"></script>
+                <!-- endbower -->
+                <!--endbuild-->
 
-            
+                <!--build:js js/main.min.js-->
+                <script src="js/main.js"></script>
+                <!--endbuild-->
+
+                
+    
     </body>
     </html>
