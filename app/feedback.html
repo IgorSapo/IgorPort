@@ -137,7 +137,21 @@
      
                                 <!-- </div> -->
 
-                                <form class="feedback-form-container clearfix" >
+                                <div class="feedback-form-container clearfix">
+                                <form class="feedback-form" action="php/hello.php">
+                                    
+                                    <div class="add_new_project-failure">
+                                        <h4 class="failure-header">Ошибка!</h4>
+                                        <p class="failure-message">Невозможно отправить сообщение.</p>
+                                        <a href="javascript:failureHide()" class="failure-X"></a>
+                                    </div>
+
+                                    <div class="add_new_project-success">
+                                        <h4 class="success-header">Ура!</h4>
+                                        <p class="success-message">Сообщение отправлено. Спасибо!</p>
+                                        <a href="javascript:successHide()" class="success-X"></a>
+                                    </div>
+
                                     <div class="feedback-sender_name_email-container clearfix">
                                         <div class="feedback-sender_name">
                                             <label class="feedback-label">Имя</label>
@@ -169,6 +183,7 @@
                                         <button type="reset" href="javascript:clearFeedbackForm()" id="feedback-clear_button" name="feedback-clear_button">Очистить</button>
                                     </div>
                                 </form>
+                                </div>
                             </div>
                         </div>
     

@@ -21,18 +21,29 @@ $(document).ready(function() {
             feedback_mainmessage: "Ваш вопрос",
             captcha_input: "Код каптчи"
         },
+        invalidHandler: function(event, validator) {
+            var errors = validator.numberOfInvalids();
+            if (errors) {
+              $(".add_new_project-failure").show();
+            } else {
+              $(".add_new_project-failure").hide();
+            }
+          },
         submitHandler: function(form) {
             ajaxSubmit(form); 				// Submit form via ajax
             $("input").removeClass('valid');
             $("textarea").removeClass('valid');
-          }
+            $(".add_new_project-failure").hide();
+            $(".add_new_project-success").show();
+        }
     });
 
 											// Validate new project form
     $(".form-add_new_project").validate({
         messages: {
             new_project_name: "Введите название",
-            real_input: "Изображение",
+            // real_input: "Изображение",
+            fake_input: "Изображение",
             new_project_url: "Ссылка на проект",
             new_project_description: "Описание проекта"
         },
@@ -90,6 +101,18 @@ clearFeedbackForm();
 
 overlayClick(); */
 
+    var $inputFile = $('#new_project_image-file');
+    
+    $inputFile.on('change', function(){
+            var filepath = $inputFile.val(),
+                            $input = $('.new_project_image-fake_input');
+        
+            filepath = filepath.replace(/c:\\fakepath\\/gmi, "");
+            $input.val(filepath);
+            $input.focus();
+            $inputFile.focus();
+    });
+
 });
 
 function PopUpShow(){
@@ -114,6 +137,10 @@ function failureHide() { // Hide error message above invalid "add_new_project" f
     $(".add_new_project-failure").hide();
 }
 
+function successHide() { // Hide error message above invalid "add_new_project" form
+    $(".add_new_project-success").hide();
+}
+
     // Прослушка события: изменение инпута загрузки файла.
     var setUpListnerFileupload = function (){
         $('#fileupload').on('change', changefileUpload);
@@ -130,3 +157,4 @@ function failureHide() { // Hide error message above invalid "add_new_project" f
     setUpListnerFileupload();
 
     changefileUpload();
+

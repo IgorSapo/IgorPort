@@ -638,7 +638,8 @@ a.login:hover > .sprite-locked {
 #filename-error.error,
 #new_project_url-error.error,
 #form-add_new_project-project_description-error.error,
-#new_project_image-file-error.error {
+#new_project_image-file-error.error,
+#new_project_image-fake_input-error.error {
     right: 100%;
 }
 
@@ -672,7 +673,8 @@ a.login:hover > .sprite-locked {
 #new_project_url-error.error:before,
 #form-add_new_project-project_description-error.error:before,
 #sender_name-error.error:before,
-#new_project_image-file-error.error:before {
+#new_project_image-file-error.error:before,
+#new_project_image-fake_input-error:before {
     right: -8px;
         border-left: 8px solid #E48E70;
     /* border-right: 1px solid #cd7b5d;
@@ -694,11 +696,25 @@ a.login:hover > .sprite-locked {
     position: relative;
 }
 
-#captcha_input.error, #feedback_mainmessage.error, #sender_name.error, #sender_email.error {
+#captcha_input.error,
+#feedback_mainmessage.error,
+#sender_name.error,
+#sender_email.error,
+#new_project_name.error,
+#new_project_url.error,
+#form-add_new_project-project_description.error,
+#new_project_image-fake_input.error {
     border-color: red;
 }
 
-#captcha_input.valid, #feedback_mainmessage.valid, #sender_name.valid, #sender_email.valid {
+#captcha_input.valid,
+#feedback_mainmessage.valid,
+#sender_name.valid,
+#sender_email.valid,
+#new_project_name.valid,
+#new_project_url.valid,
+#form-add_new_project-project_description.valid,
+#new_project_image-fake_input.valid {
     border-color: green;
 }
 
