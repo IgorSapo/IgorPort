@@ -17,14 +17,14 @@ html, body {
     min-height: 100%;
     height:auto!important;
     overflow:hidden;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
 }
 
 /* .wrapper:after {
 	content: "";
-	height: 60px;
-  position: absolute;
-    bottom: -60px;
+	height: 80px;
+	position: absolute;
+    bottom: -80px;
 	display: block;
 } */
 
@@ -114,6 +114,7 @@ ul.header-social {
     width: 960px;
     margin-right: auto;
     margin-left: auto;
+	padding-bottom: 60px;
 }
 
 /* === Aside === */
@@ -636,7 +637,8 @@ a.login:hover > .sprite-locked {
 #new_project_name-error.error,
 #filename-error.error,
 #new_project_url-error.error,
-#form-add_new_project-project_description-error.error {
+#form-add_new_project-project_description-error.error,
+#new_project_image-file-error.error {
     right: 100%;
 }
 
@@ -669,7 +671,8 @@ a.login:hover > .sprite-locked {
 #filename-error.error:before,
 #new_project_url-error.error:before,
 #form-add_new_project-project_description-error.error:before,
-#sender_name-error.error:before {
+#sender_name-error.error:before,
+#new_project_image-file-error.error:before {
     right: -8px;
         border-left: 8px solid #E48E70;
     /* border-right: 1px solid #cd7b5d;

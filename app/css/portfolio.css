@@ -63,6 +63,8 @@
 }
 
 .portfolio-image-hover-link {
+  display: block;
+  text-decoration: none;
   width: 81px;
   text-align: center;
   line-height: 22px;
@@ -75,7 +77,6 @@
   right: -82px;
   transition: 0s all 0.2s;
   font-size: 11px;
-  cursor: pointer;
 }
 
 .portfolio-image-container:hover .portfolio-image-hover-link {
@@ -244,6 +245,88 @@ background: linear-gradient(0deg, #c2c0c0 0%, #e3e1e1 86%, #e8e7e7 90%, #e8e7e7 
   padding: 0;
   position: absolute;
   width: 0px;
+}
+
+
+
+
+.new_project_image-wrapper {
+    margin-top: 8px;
+    margin-bottom: 6px;
+    position: relative;
+    width: 320px;
+    font-size: 0;
+}
+
+.new_project_image-form-wrapper {
+  margin-top: 8px;
+  margin-bottom: 6px;
+}
+
+.new_project_image-fake_input {
+  display: inline-block;
+  vertical-align: bottom;
+  background-color: #F8FAFB;
+  border: 1px solid #d6d5d3;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 12px;
+  width: 267px;
+  height: 41px;
+  line-height: 43px;
+  /*display: block;*/
+  padding-left: 12px;
+  box-sizing: border-box;
+  /*position: relative;*/
+  /*position: absolute;*/
+  left: 0;
+  bottom: 0;
+      font-family: "Open Sans Regular", Arial , Helvetica, sans-serif;
+    color: #c7c6c6;
+    font-size: 12px;
+}
+
+.new_project_image-original_input {
+  position: absolute;
+  left: -9999px;
+}
+
+.new_project_image-button {
+/*    position: absolute;
+  bottom: 0;
+  right: 0;*/
+  display: inline-block;
+  vertical-align: bottom;
+  height: 41px;
+  width: 53px;
+  box-sizing: border-box;
+  border-radius: 0px 4px 4px 0;
+  border: 1px solid #c3c2c2;
+
+background: -webkit-linear-gradient(90deg, #e9e6e5 0%, #fbf9f9 94%, #ffffff 100%);
+background: -moz-linear-gradient(90deg, #e9e6e5 0%, #fbf9f9 94%, #ffffff 100%);
+background: -o-linear-gradient(90deg, #e9e6e5 0%, #fbf9f9 94%, #ffffff 100%);
+background: -ms-linear-gradient(90deg, #e9e6e5 0%, #fbf9f9 94%, #ffffff 100%);
+background: linear-gradient(0deg, #e9e6e5 0%, #fbf9f9 94%, #ffffff 100%);
+box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.07);
+
+position: relative;
+}
+
+.new_project_image-button:after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 18px;
+    background-image: url("../img/spritesheet1.png");
+    background-position: -87px -98px;
+    background-repeat: no-repeat;
+    /* width: 25px;
+    height: 17px; */
+    position: absolute;
+    top: 11px;
+    left: 14px;
+    box-shadow: 0px 1px 0px 0px #ffffff;
 }
 
 

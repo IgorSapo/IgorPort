@@ -22,16 +22,17 @@ $(document).ready(function() {
             captcha_input: "Код каптчи"
         },
         submitHandler: function(form) {
-            ajaxSubmit(form); // Submit form via ajax
+            ajaxSubmit(form); 				// Submit form via ajax
             $("input").removeClass('valid');
             $("textarea").removeClass('valid');
           }
     });
 
-    $(".form-add_new_project").validate({ // Validate new project form
+											// Validate new project form
+    $(".form-add_new_project").validate({
         messages: {
             new_project_name: "Введите название",
-            filename: "Изображение",
+            real_input: "Изображение",
             new_project_url: "Ссылка на проект",
             new_project_description: "Описание проекта"
         },
@@ -55,10 +56,12 @@ $(document).ready(function() {
     var ajaxSubmit = function (submittedForm) { // Sumbit _valid_ form via ajax
         console.log("Вызвана функция сабмита через ajax");
         var str = $(submittedForm).serialize();
+		var urlPhp = $(submittedForm).attr("action");
+		console.log(urlPhp);
         $.ajax ({
                 type: "POST",
                 cache: false,
-                url: "php/hello.php",
+                url: urlPhp,
                 data: str,
                 success: function(serverResponse) {
                     console.log(serverResponse);

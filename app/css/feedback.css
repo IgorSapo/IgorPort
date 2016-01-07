@@ -1,5 +1,5 @@
 .feedback-form-container {
-    width: 403px;
+    width: 398px;
     min-height: 300px;
     margin: -9px auto 0 auto;
     padding: 0;
@@ -14,7 +14,7 @@
 
 .feedback-sender_email {
     height: 68px;
-    width: 193px;
+    width: 187px;
     float: right;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .feedback-captcha-input {
-    width: 192px;
+    width: 187px;
     float: right;
 }
 
@@ -221,7 +221,7 @@ box-shadow: 0px 2px 1px 0px rgba(9, 9, 9, 0.16);
 }
 
 #captcha_input {
-    width: 180px;
+    width: 181px;
     height: 28px;
     border-radius: 3px;
     border-width: 1px;

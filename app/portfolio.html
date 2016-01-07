@@ -138,7 +138,7 @@
                                     <li class="portfolio-item">
                                         <div class="portfolio-image-container">
                                             <div class="portfolio-image-container-hover">
-                                                <div class="portfolio-image-hover-link">Посмотреть</div>    
+                                                <a href="" class="portfolio-image-hover-link">Посмотреть</a>
                                             </div>
                                             <img class="portfolio-image" src="img/popsci.jpg" alt="Картинка проекта">
                                         </div>
@@ -149,7 +149,7 @@
                                     <li class="portfolio-item">
                                         <div class="portfolio-image-container">
                                             <div class="portfolio-image-container-hover">
-                                                <div class="portfolio-image-hover-link">Посмотреть</div>    
+                                                <a href="" class="portfolio-image-hover-link">Посмотреть</a>    
                                             </div>
                                             <img class="portfolio-image" src="img/popsci.jpg" alt="Картинка проекта">
                                         </div>
@@ -160,7 +160,7 @@
                                     <li class="portfolio-item">
                                         <div class="portfolio-image-container">
                                             <div class="portfolio-image-container-hover">
-                                                <div class="portfolio-image-hover-link">Посмотреть</div>    
+                                                <a href="" class="portfolio-image-hover-link">Посмотреть</a>   
                                             </div>
                                             <img class="portfolio-image" src="img/popsci.jpg" alt="Картинка проекта">
                                         </div>
@@ -171,7 +171,7 @@
                                     <li class="portfolio-item">
                                         <div class="portfolio-image-container">
                                             <div class="portfolio-image-container-hover">
-                                                <div class="portfolio-image-hover-link">Посмотреть</div>    
+                                                <a href="" class="portfolio-image-hover-link">Посмотреть</a>   
                                             </div>
                                             <img class="portfolio-image" src="img/popsci.jpg" alt="Картинка проекта">
                                         </div>
@@ -182,7 +182,7 @@
                                     <li class="portfolio-item">
                                         <div class="portfolio-image-container">
                                             <div class="portfolio-image-container-hover">
-                                                <div class="portfolio-image-hover-link">Посмотреть</div>    
+                                                <a href="" class="portfolio-image-hover-link">Посмотреть</a>    
                                             </div>
                                             <img class="portfolio-image" src="img/popsci.jpg" alt="Картинка проекта">
                                         </div>
@@ -226,7 +226,7 @@
                             <h4 class="success-header">Ура!</h4>
                             <p class="success-message">Проект успешно добавлен.</p>
                         </div>
-                    <form class="form-add_new_project">
+                    <form class="form-add_new_project" action="php/hello.php">
                       
 
                       
@@ -254,13 +254,13 @@
 
 
                     
-                    <div class="addproject_field_box">
-                    <label for="fileupload" class="form-add_new_project-label">Картинка проекта</label>
-                      <input id="filename" name="filename" type="text" class="add_proj_text_input" disabled required placeholder="Загрузите изображение">
-                      <label class="add_proj_file_button">
-                        <input id="fileupload" class="fileupload" type="file" name="files[]">
-                        <input id="fileurl" type="hidden" name="fileurl">
-                      </label>
+                    <div class="new_project_image-wrapper">
+                        <label for="fileupload" class="form-add_new_project-label">Картинка проекта</label>
+                        <div class="new_project_image-form-wrapper">
+                            <input type="text" id="new_project_image-fake_input" class="new_project_image-fake_input" required disabled placeholder="Загрузите изображение">
+                            <label for="new_project_image-file" class="new_project_image-button"></label>
+                            <input id="new_project_image-file" type="file" class="new_project_image-original_input" required name="real_input">
+                        </div>
                     </div>
 
 
